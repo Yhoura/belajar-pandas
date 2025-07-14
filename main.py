@@ -12,7 +12,17 @@ data = {
     "umur":[12,22,23],
     "email":["wiyono@gmail.com","rizki@gmail.com","dewantoro@gmail.com"]
 }
-j = pd.DataFrame(data)
-j[["nama"],["email"]]
+j = pd.DataFrame(data).set_index("email")
+j["nama"]
+# %%
+l = pd.DataFrame(data)
+l['email']
+# %%
+i= pd.DataFrame(data)
+i.loc[0]
 
+# %%
+j.loc["wiyono@gmail.com"]
+# %%
+j.iloc[1]
 # %%
